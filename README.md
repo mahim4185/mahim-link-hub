@@ -1,21 +1,20 @@
-# Free Root Android Phone — GitHub Pages
+# Free Root Android Phone — V2
 
-## Files
-- `index.html`: site content and Bengali/English guidelines
-- `style.css`: responsive dark/neon design and animation
-- `app.js`: sponsor-link open and return-confirmation buttons
-- `ads.js`: third-party ad script placements
+This version restores the large boxed download-flow layout:
+1. Four sequential ad placements, each with a 15-second countdown.
+2. Social links in order: Telegram, TikTok, Facebook, YouTube. Each must be opened and manually marked complete before the next.
+3. After all four are marked complete, start the 10-second countdown and then open the Google Drive folder.
 
-## Publish / update
-1. Extract this ZIP.
-2. Open your GitHub repository: https://github.com/mahim4185/mahim-link-hub
-3. Upload/replace `index.html`, `style.css`, and `app.js` in the repository root. Also upload the new `ads.js`.
-4. Keep `Settings → Pages` set to `Deploy from a branch`, `main`, `/(root)`.
-5. Wait for the Pages deployment to succeed, then visit https://mahim4185.github.io/mahim-link-hub/
+## Update your GitHub Pages site
+1. Download and extract the ZIP.
+2. Open https://github.com/mahim4185/mahim-link-hub
+3. Upload/replace `index.html`, `style.css`, and `app.js` in the repository root; upload `ads.js` too.
+4. Keep Settings → Pages set to `main` and `/(root)`.
+5. Wait for deployment and refresh https://mahim4185.github.io/mahim-link-hub/
 
-## Notes
-- Uses the 200×200 ShrinkMe banner; the old 728×90 banner is omitted.
-- Bicea scripts may be blocked or not render depending on provider settings, browser, region, or ad blocker.
-- Continue buttons only record the visitor's self-confirmation after opening a link. They do not verify ad views, clicks, follows, or app installs.
-- Ensure the Google Drive folder permissions allow intended visitors to access the files.
-- Check APK sources and permissions before installation. Rooting may reduce security and affect warranty.
+## Important limitations
+- This is a client-side sequence only. A visitor can bypass client-side checks; it is not a secure access-control system.
+- The website cannot independently verify a real follow, join, subscribe, ad view, or ad click. Social completion is self-confirmed by the visitor.
+- Ad network scripts can fail to render or be blocked by browser/privacy/ad-network rules.
+- The Drive folder must be shared with the intended audience.
+- Check APK safety and permissions before installing. Rooting can affect security and warranty.
