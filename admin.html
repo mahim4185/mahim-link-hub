@@ -1,0 +1,11 @@
+<!doctype html><html lang="bn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Mahim Link Hub — Admin</title><link rel="stylesheet" href="style.css"></head>
+<body><header class="top"><a class="brand" href="./"><span class="logo">M</span> Mahim <b>Admin</b></a><a class="admin-link" href="./">সাইটে ফিরুন ↗</a></header>
+<main class="wrap"><section class="panel step"><div class="tag">PRIVATE ADMIN</div><h2>অ্যাডমিন ড্যাশবোর্ড</h2><p>শুধু তোমার Firebase অ্যাকাউন্ট দিয়ে লগইন করে লিংকগুলো আপডেট করো। প্রথমবার চালুর আগে Firebase সেটআপ লাগবে।</p>
+<div id="setupNotice" class="notice">সেটআপ প্রয়োজন: firebase-config.js-এ সম্পূর্ণ Firebase Web App config বসাও, Firebase Authentication-এ Email/Password চালু করো এবং Firestore security rules বসাও। এই পেজে কোনো ডিফল্ট পাসওয়ার্ড রাখা নেই।</div>
+<form id="loginForm"><label>ইমেইল<input class="field" id="email" type="email" required autocomplete="username"></label><label>পাসওয়ার্ড<input class="field" id="password" type="password" required autocomplete="current-password"></label><button class="btn" type="submit">নিরাপদে লগইন</button></form>
+<div id="editor" hidden><hr style="border-color:#2a3958;margin:22px 0"><h3>স্পনসর লিংক</h3>
+<div id="adsFields"></div><h3>সোশ্যাল মিডিয়া লিংক</h3><div id="socialFields"></div>
+<label>Google Drive URL<input class="field" id="driveUrl" type="url" placeholder="https://drive.google.com/..."></label>
+<div class="row"><button class="btn" id="save" type="button">ওয়েবসাইটে সেভ করুন</button><button class="btn alt" id="logout" type="button">লগআউট</button></div><p id="status" class="small"></p></div>
+<p class="small">নিরাপত্তা: অ্যাডমিনের অনুমতি Firebase Security Rules দিয়ে নিয়ন্ত্রণ করতে হবে। কোনো GitHub token বা সার্ভার secret এখানে বসাবে না।</p></section></main>
+<script src="firebase-config.js"></script><script type="module" src="admin.js"></script></body></html>
